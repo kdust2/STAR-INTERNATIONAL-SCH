@@ -136,16 +136,18 @@
                         </div>
                         <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
 
-                            <!DOCTYPE html>
+           <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Support Programs</title>
+    <title>Educational Programs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --blue: #1a73e8;
             --dark-blue: #0d47a1;
+            --light-blue: #4285f4;
             --light-gray: #f5f7fa;
             --medium-gray: #e0e0e0;
             --dark-gray: #333;
@@ -188,130 +190,89 @@
             opacity: 0.9;
         }
         
-        .card {
+        .section-title {
+            color: var(--dark-blue);
+            font-size: 2rem;
+            text-align: center;
+            margin: 3rem 0 1.5rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--blue);
+            margin: 0.5rem auto;
+            border-radius: 2px;
+        }
+        
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .program-card {
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin: 2rem auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .card:hover {
+        .program-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
         
-        .image-container {
-            height: 300px;
-            overflow: hidden;
+        .program-image {
+            height: 200px;
+            background: var(--light-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
+            overflow: hidden;
         }
         
-        .image-container img {
+        .program-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .card:hover .image-container img {
+        .program-card:hover .program-image img {
             transform: scale(1.05);
         }
         
-        .image-overlay {
+        .program-icon {
+            font-size: 4rem;
+            color: white;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            z-index: 2;
         }
         
-        .content {
-            padding: 2rem;
+        .program-content {
+            padding: 1.5rem;
         }
         
-        h4 {
+        .program-title {
             color: var(--blue);
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            border-bottom: 2px solid var(--medium-gray);
-            padding-bottom: 0.5rem;
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-            color: #555;
-            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
         }
         
         .program-list {
-            list-style-type: none;
-            margin: 1.5rem 0;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
         }
         
         .program-list li {
-            padding: 0.8rem 0;
-            border-bottom: 1px solid var(--medium-gray);
-            display: flex;
-            align-items: center;
-            transition: background-color 0.2s ease;
-        }
-        
-        .program-list li:hover {
-            background-color: rgba(26, 115, 232, 0.05);
-        }
-        
-        .program-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .program-list li::before {
-            content: "▸";
-            color: var(--blue);
-            font-weight: bold;
-            display: inline-block;
-            width: 1.5em;
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--blue);
-            color: white;
-            padding: 0.8rem 1.8rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 1rem;
-            transition: background 0.3s ease, transform 0.2s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        
-        .btn:hover {
-            background: var(--dark-blue);
-            transform: translateY(-2px);
-        }
-        
-        .info-box {
-            background: #e8f4fd;
-            border-left: 4px solid var(--blue);
-            padding: 1.2rem;
-            margin-top: 1.5rem;
-            border-radius: 0 5px 5px 0;
-        }
-        
-        .info-box h5 {
-            color: var(--dark-blue);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
         }
         
         footer {
@@ -331,16 +292,8 @@
                 font-size: 2rem;
             }
             
-            .image-container {
-                height: 200px;
-            }
-            
-            .content {
-                padding: 1.5rem;
-            }
-            
-            h4 {
-                font-size: 1.5rem;
+            .section-title {
+                font-size: 1.7rem;
             }
         }
     </style>
@@ -348,29 +301,89 @@
 <body>
     <header>
         <div class="container">
-            <h1>Computer Support Programs</h1>
-            <p class="subtitle">Preparing students for the digital age with practical technology skills</p>
+            <h1>Educational Programs</h1>
+            <p class="subtitle">Comprehensive learning experiences for all students</p>
         </div>
     </header>
     
     <div class="container">
-        <div class="card">
-            <div class="image-container">
-                <!-- Using the provided image path -->
-                <img src="WhatsApp Image 2025-10-31 at 13.01.05_9eed7b3c.jpg" alt="Computer Lab">
-                <div class="image-overlay"></div>
+        <h3 class="section-title">Computer Support Programs</h3>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="WhatsApp Image 2025-10-31 at 13.01.05_9eed7b3c.jpg" alt="Computer Lab">
+                    <i class="fas fa-laptop-code program-icon"></i>
+                </div>
+                <div class="program-content">
+                    <h4 class="program-title">Computer Support Programs</h4>
+                    <p>Our Computer Support Programs prepare students for the digital age with practical technology skills and problem-solving abilities. The curriculum includes:</p>
+                    <ul class="program-list">
+                        <li>Hardware troubleshooting and repair</li>
+                        <li>Operating system installation and configuration</li>
+                        <li>Network setup and maintenance</li>
+                        <li>Software application support</li>
+                        <li>Cybersecurity fundamentals</li>
+                        <li>Cloud computing basics</li>
+                    </ul>
+                </div>
             </div>
-            <div class="content">
-                <h4>Comprehensive Technology Education</h4>
-                <p>Our Computer Support Programs prepare students for the digital age with practical technology skills and problem-solving abilities. The curriculum includes:</p>
-                
+        </div>
+        
+        <div style="margin-top: 4rem;">
+            <h3 class="section-title">Special Programs</h3>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <i class="fas fa-brain program-icon"></i>
+                    </div>
+                    <div class="program-content">
+                        <h4 class="program-title">UCMAS Program</h4>
+                        <p>Our UCMAS (Universal Concept of Mental Arithmetic System) program develops children's mental capabilities through mental arithmetic and brain development exercises. This program enhances:</p>
+                        <ul class="program-list">
+                            <li>Concentration and focus</li>
+                            <li>Memory and visualization skills</li>
+                            <li>Logical thinking and problem-solving</li>
+                            <li>Speed and accuracy in calculations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <i class="fas fa-theater-masks program-icon"></i>
+                    </div>
+                    <div class="program-content">
+                        <h4 class="program-title">Theatre Arts</h4>
+                        <p>Our Theatre Arts program fosters creativity, confidence, and communication skills through various performing arts activities. Students explore:</p>
+                        <ul class="program-list">
+                            <li>Acting techniques and character development</li>
+                            <li>Voice projection and stage presence</li>
+                            <li>Script writing and analysis</li>
+                            <li>Stagecraft and production elements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <i class="fas fa-palette program-icon"></i>
+                    </div>
+                    <div class="program-content">
+                        <h4 class="program-title">Beads Making</h4>
+                        <p>Our Beads Making program combines artistic expression with the development of fine motor skills and cultural appreciation. Students learn:</p>
+                        <ul class="program-list">
+                            <li>Various beading techniques and patterns</li>
+                            <li>Color theory and design principles</li>
+                            <li>Cultural significance of beadwork</li>
+                            <li>Creating jewelry and decorative items</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     <footer>
         <div class="container">
-            <p>&copy; 2025 Computer Support Programs | Preparing the next generation of IT professionals</p>
+            <p>&copy; 2025 Educational Programs | Empowering students through diverse learning experiences</p>
         </div>
     </footer>
 </body>
