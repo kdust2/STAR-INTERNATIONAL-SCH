@@ -31,33 +31,29 @@
     </header>
 
     <!-- Application Page -->
-    <form 
-     action="https://formspree.io/f/xanpppwq" 
-     method="POST"
-    >
-<input type="hidden" name="form_type" value="Star International School Application">         
-    <section id="application" class="page-content">
-        <div class="container" style="padding-top: 2rem;">
-            <h2 class="section-title">Admission Application</h2>
-            
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Thank you for your interest in Star International School. Please fill out the form below to begin the application process.</p>
-            
-            <div class="form-container">
-                <form id="application-form">
-                    <h3 style="color: var(--blue); margin-bottom: 1.5rem;">Student Information</h3>
-                    
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <div class="form-group">
-                            <label>
-                                First Name *</label>
-                            <input type="text" name="first_name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="LastName"> Last Name *</label>
-                            <input type="text" id="LastName" name="LastName" required>
-                        </div>
+   <!-- Application Page -->
+<section id="application" class="page-content">
+    <div class="container" style="padding-top: 2rem;">
+        <h2 class="section-title">Admission Application</h2>
+        
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Thank you for your interest in Star International School. Please fill out the form below to begin the application process.</p>
+        
+        <div class="form-container">
+            <form id="application-form" action="https://formspree.io/f/xanpppwq" method="POST">
+                <input type="hidden" name="form_type" value="Star International School Application">
+                
+                <h3 style="color: var(--blue); margin-bottom: 1.5rem;">Student Information</h3>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label>First Name *</label>
+                        <input type="text" name="first_name" required>
                     </div>
-                    
+                    <div class="form-group">
+                        <label>Last Name *</label>
+                        <input type="text" name="last_name" required>
+                    </div>
+                </div>                 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                         <div class="form-group">
                             <label>Date of Birth *</label>
