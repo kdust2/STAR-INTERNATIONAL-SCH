@@ -135,17 +135,164 @@
                             </div>
                         </div>
                         <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-    <div style="height: 200px; overflow: hidden; position: relative;">
-        <!-- Replace "your-image.jpg" with your actual image file path -->
-        <img src="images/WhatsApp Image 2025-10-31 at 13.01.05_9eed7b3c.jpg" alt="Computer Lab" style="width: 100%; height: 100%; object-fit: cover;">
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
-        </div>
-    </div>
-    <div style="padding: 1.5rem;">
-        <h4 style="color: var(--blue); margin-bottom: 0.5rem;">Computer Support Programs</h4>
-        <p>Our Computer Support Programs prepare students for the digital age with practical technology skills and problem-solving abilities. The curriculum includes:</p>
-    </div>
-</div>
+    <style>
+        :root {
+            --blue: #1a73e8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .image-container {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .card:hover .image-container img {
+            transform: scale(1.05);
+        }
+        
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .content {
+            padding: 1.5rem;
+        }
+        
+        h4 {
+            color: var(--blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .program-list {
+            list-style-type: none;
+            margin-top: 1rem;
+        }
+        
+        .program-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .program-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .program-list li::before {
+            content: "•";
+            color: var(--blue);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #0d5bb9;
+        }
+        
+        .fallback-message {
+            background: #f8f9fa;
+            border-left: 4px solid var(--blue);
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem auto;
+            }
+            
+            h4 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image-container">
+                <!-- Try multiple image paths with fallback -->
+                <img src="images/WhatsApp Image 2025-10-31 at 13.01.05_9eed7b3c.jpg" alt="Computer Lab" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80';">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="content">
+                <h4>Computer Support Programs</h4>
+                <p>Our Computer Support Programs prepare students for the digital age with practical technology skills and problem-solving abilities. The curriculum includes:</p>
+                
+                <div class="fallback-message">
+                    <strong>Image Note:</strong> If the computer lab image isn't displaying, it's likely because the image file path is incorrect. Make sure your image is in the "images" folder with the correct filename.
+                </div>
                         </div>
                     </div>
                 </div>
