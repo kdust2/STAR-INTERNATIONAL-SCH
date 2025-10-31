@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Calendar - Star International Preparatory School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-star" style="font-size: 2rem; color: var(--yellow); margin-right: 10px;"></i>
+                <h1>Star <span>International Preparatory</span> School</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="students.html" class="nav-link">Student Life</a></li>
+                    <li><a href="calendar.html" class="nav-link">Calendar</a></li>
+                    <li><a href="application.html" class="nav-link">Application</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Calendar Page -->
+    <section id="calendar" class="page-content active">
+        <div class="container" style="padding-top: 2rem;">
+            <h2 class="section-title">School Calendar 2024-2025</h2>
+            
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <h3>October 2025</h3>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">Sun</div>
+                    <div class="calendar-day-header">Mon</div>
+                    <div class="calendar-day-header">Tue</div>
+                    <div class="calendar-day-header">Wed</div>
+                    <div class="calendar-day-header">Thu</div>
+                    <div class="calendar-day-header">Fri</div>
+                    <div class="calendar-day-header">Sat</div>
+                    
+                    <!-- Empty days for the first week -->
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    <div class="calendar-day">9</div>
+                    
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day event">11<br><small>Parent-Teacher Meeting</small></div>
+                    <div class="calendar-day">12</div>
+                    <div class="calendar-day">13</div>
+                    <div class="calendar-day event">14<br><small>Science Fair</small></div>
+                    <div class="calendar-day">15</div>
+                    <div class="calendar-day">16</div>
+                    
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day event">19<br><small>Sports Day</small></div>
+                    <div class="calendar-day event">20<br><small>Sports Day</small></div>
+                    <div class="calendar-day">21</div>
+                    <div class="calendar-day">22</div>
+                    <div class="calendar-day">23</div>
+                    
+                    <div class="calendar-day">24</div>
+                    <div class="calendar-day">25</div>
+                    <div class="calendar-day">26</div>
+                    <div class="calendar-day event">27<br><small>Art Exhibition</small></div>
+                    <div class="calendar-day">28</div>
+                    <div class="calendar-day">29</div>
+                    <div class="calendar-day">30</div>
+                    
+                    <div class="calendar-day event">31<br><small>Our Day</small></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <h3 style="text-align: center; color: var(--blue); margin-bottom: 1rem;">Upcoming Events</h3>
+                <div style="background: var(--light); padding: 1.5rem; border-radius: 10px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd;">
+                        <div style="background: var(--yellow); color: var(--dark); padding: 0.5rem 1rem; border-radius: 5px; margin-right: 1rem; text-align: center;">
+                            <div style="font-weight: bold; font-size: 1.2rem;">14</div>
+                            <div>Oct</div>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--blue);">Annual Science Fair</h4>
+                            <p>Time: 9:00 AM - 3:00 PM | Venue: School Science Block</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd;">
+                        <div style="background: var(--yellow); color: var(--dark); padding: 0.5rem 1rem; border-radius: 5px; margin-right: 1rem; text-align: center;">
+                            <div style="font-weight: bold; font-size: 1.2rem;">19-20</div>
+                            <div>Oct</div>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--blue);">Annual Sports Day</h4>
+                            <p>Time: 8:00 AM - 4:00 PM | Venue: School Forecourt</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center;">
+                        <div style="background: var(--yellow); color: var(--dark); padding: 0.5rem 1rem; border-radius: 5px; margin-right: 1rem; text-align: center;">
+                            <div style="font-weight: bold; font-size: 1.2rem;">27</div>
+                            <div>Oct</div>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--blue);">Art Exhibition</h4>
+                            <p>Time: 10:00 AM - 2:00 PM | Venue: School Art Gallery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Calendar Months -->
+            <div style="margin-top: 4rem;">
+                <div class="calendar-header">
+                    <h3>November 2025</h3>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">Sun</div>
+                    <div class="calendar-day-header">Mon</div>
+                    <div class="calendar-day-header">Tue</div>
+                    <div class="calendar-day-header">Wed</div>
+                    <div class="calendar-day-header">Thu</div>
+                    <div class="calendar-day-header">Fri</div>
+                    <div class="calendar-day-header">Sat</div>
+                    
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day">1</div>
+                    
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    
+                    <div class="calendar-day">9</div>
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day event">12<br><small>Mid-term Break</small></div>
+                    <div class="calendar-day event">13<br><small>Mid-term Break</small></div>
+                    <div class="calendar-day event">14<br><small>Mid-term Break</small></div>
+                    <div class="calendar-day">15</div>
+                    
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day">20</div>
+                    <div class="calendar-day">21</div>
+                    <div class="calendar-day">22</div>
+                    
+                    <div class="calendar-day">23</div>
+                    <div class="calendar-day">24</div>
+                    <div class="calendar-day">25</div>
+                    <div class="calendar-day">26</div>
+                    <div class="calendar-day">27</div>
+                    <div class="calendar-day event">28<br><small>Cultural Day</small></div>
+                    <div class="calendar-day">29</div>
+                    
+                    <div class="calendar-day">30</div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <div class="calendar-header">
+                    <h3>December 2025</h3>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">Sun</div>
+                    <div class="calendar-day-header">Mon</div>
+                    <div class="calendar-day-header">Tue</div>
+                    <div class="calendar-day-header">Wed</div>
+                    <div class="calendar-day-header">Thu</div>
+                    <div class="calendar-day-header">Fri</div>
+                    <div class="calendar-day-header">Sat</div>
+                    
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+                    
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    <div class="calendar-day">9</div>
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day event">12<br><small>Christmas Concert</small></div>
+                    <div class="calendar-day">13</div>
+                    
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day">15</div>
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day event">19<br><small>End of Term</small></div>
+                    <div class="calendar-day">20</div>
+                    
+                    <div class="calendar-day event">21<br><small>Holidays Begin</small></div>
+                    <div class="calendar-day event">22<br><small>Holidays</small></div>
+                    <div class="calendar-day event">23<br><small>Holidays</small></div>
+                    <div class="calendar-day event">24<br><small>Holidays</small></div>
+                    <div class="calendar-day event">25<br><small>Christmas Day</small></div>
+                    <div class="calendar-day event">26<br><small>Holidays</small></div>
+                    <div class="calendar-day event">27<br><small>Holidays</small></div>
+                    
+                    <div class="calendar-day event">28<br><small>Holidays</small></div>
+                    <div class="calendar-day event">29<br><small>Holidays</small></div>
+                    <div class="calendar-day event">30<br><small>Holidays</small></div>
+                    <div class="calendar-day event">31<br><small>New Year's Eve</small></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tsui bleoo, Alloway</p>
+                    <p><i class="fas fa-phone"></i> +233 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> lanoelliot@gmail.com</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="students.html">Student Life</a></li>
+                        <li><a href="calendar.html">School Calendar</a></li>
+                        <li><a href="application.html">Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Star International School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('nav ul');
+
+            // Mobile menu toggle
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
