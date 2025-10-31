@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star International Preparatory School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-star" style="font-size: 2rem; color: var(--yellow); margin-right: 10px;"></i>
+                <h1>Star <span>International Preparatory</span> School</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="students.html" class="nav-link">Student Life</a></li>
+                    <li><a href="calendar.html" class="nav-link">Calendar</a></li>
+                    <li><a href="application.html" class="nav-link">Application</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page Content -->
+    <section id="home" class="page-content active">
+        <div class="hero">
+            <div class="container">
+                <h2>Welcome to Star International School</h2>
+                <p>Where we nurture young minds to become global leaders of tomorrow through excellence in education and character development.</p>
+                <a href="application.html" class="btn btn-yellow">Apply Now</a>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Excellence in Education Since 1995</h3>
+                        <p>At Star International School, we provide a nurturing environment that fosters academic excellence, creativity, and character development. Our dedicated faculty and state-of-the-art facilities ensure that every student receives the highest quality education.</p>
+                        <p>We offer a comprehensive curriculum that combines the best of international standards with local cultural values, preparing our students to succeed in a globalized world.</p>
+                        <a href="about.html" class="btn">Learn More About Us</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/IMG-20250924-WA0006.jpg" alt="School Building">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="students-life">
+            <div class="container">
+                <h2 class="section-title">Glimpses of Student Life</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/IMG_2516.jpg" alt="Awards won by students">
+                        <div class="gallery-item-overlay"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG_2371.jpg" alt="Science lab">
+                        <div class="gallery-item-overlay"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG-20250924-WA0012.jpg" alt="Sports day">
+                        <div class="gallery-item-overlay"></div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="students.html" class="btn">View More</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tsui bleoo, Alloway</p>
+                    <p><i class="fas fa-phone"></i> +233 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> lanoelliot@gmail.com</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="students.html">Student Life</a></li>
+                        <li><a href="calendar.html">School Calendar</a></li>
+                        <li><a href="application.html">Application</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Star International School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('nav ul');
+
+            // Mobile menu toggle
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
