@@ -55,6 +55,12 @@
             display: flex;
             align-items: center;
         }
+        .school-logo {
+            height: 50px;
+            width: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
         
         .logo h1 {
             font-size: 1.5rem;
@@ -93,6 +99,59 @@
             color: white;
             cursor: pointer;
         }
+        /* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .school-logo {
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .logo h1 span {
+        display: block;
+        font-size: 0.9rem;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--blue);
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0.1rem 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .school-logo {
+        height: 35px;
+    }
+}
         
         .section-title {
             text-align: center;
