@@ -91,7 +91,47 @@
             color: var(--light);
             cursor: pointer;
         }
-        
+        @media (max-width: 768px) {
+            .school-logo {
+              height: 40px;
+        }
+         .mobile-menu-btn {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--blue);
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0.5rem 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .school-logo {
+        height: 35px;
+    }
+}
         .section-title {
             text-align: center;
             color: var(--blue);
